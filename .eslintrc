@@ -1,0 +1,37 @@
+{
+  "extends": "think",
+  "rules": {
+    // don"t require .vue extension when importing
+    "semi": [
+      "warn",
+      "never"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "import/no-unresolved": 0,
+    "strict": 0,
+    // "strict": ["error", "global"],
+    // allow debugger during development
+    "max-len": [
+      "error",
+      180,
+      4,
+      {
+        "ignoreUrls": true
+      }
+    ],
+    "func-names": 0,
+    "no-plusplus": 0,
+    "global-require": 0,
+    "no-unused-vars": 0,
+    "linebreak-style": 0,
+    "no-tabs": 0,
+    "no-console": 0,
+    "indent": 0,
+    "statement": 0,
+    "no-trailing-spaces": 0,
+    "class-methods-use-this": 0
+  }
+}

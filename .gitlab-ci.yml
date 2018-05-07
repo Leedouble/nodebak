@@ -1,0 +1,17 @@
+stages:
+  - test
+  - deploy
+
+job1:
+  stage: test
+  script:
+    - sh /home/www/server/api.com/runner/test.sh
+  only:
+    - dev
+
+job2:
+  stage: deploy
+  script:
+    - sh /home/www/server/api.com/runner/deploy.sh
+  only:
+    - master
