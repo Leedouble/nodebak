@@ -1,9 +1,10 @@
 
-Application created by [ThinkJS](http://www.thinkjs.org)
+Application based on [ThinkJS](http://www.thinkjs.org)
 
 ## Install dependencies
 
 ```
+npm config set registry https://registry.npm.taobao.org --global
 npm install
 ```
 
