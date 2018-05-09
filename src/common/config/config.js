@@ -2,7 +2,7 @@
 module.exports = {
   port: 10073,
   workers: 1,
-  allowCORS: '(api.me|api.me:443|api.org|api.com)$',
+  allowCORS: '(vuebak.com|api.com:443)$',
   headerWxCode: 'x-wx-code',
   errno: {
     mysql: 4001,
