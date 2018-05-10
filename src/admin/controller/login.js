@@ -2,7 +2,7 @@ module.exports = class extends think.Controller {
   async phoneAction() {
     const params = {
       phone: this.post('phone'),
-      passwd: this.post('passwd')
+      passwd: think.md5(`${this.post('passwd')}parents`)
     }
     const res = await this.model('user/user', 'userMysql').login(params)
     if (!res.status) {
